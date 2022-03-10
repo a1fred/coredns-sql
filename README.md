@@ -1,15 +1,18 @@
 # coredns-sql
 Simplified version of `https://github.com/wenerme/coredns-pdsql/`
 
- * Case insensitive search using sql: `LOWER(...)`
+ * `Domain` table removed
  * Wildcard searches removed
- * `fallthrough` added
+ * Case insensitive search using sql: `LOWER(...)`
+ * `fallthrough` option added
 
 # Usage
 plugin.cfg
 ```
+...
 sql:git.dev.a1fred.com/protocloud/zibort-coredns/pdsql
 sql_postgres:github.com/jinzhu/gorm/dialects/postgres
+...
 ```
 
 Corefile
@@ -20,3 +23,6 @@ sql postgres "host=postgres user=postgres password=postgres dbname=dns port=5432
     fallthrough [ZONES...]
 }
 ```
+
+# See also
+ * https://github.com/wenerme/coredns-pdsql/
