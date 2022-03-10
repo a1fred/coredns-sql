@@ -10,7 +10,7 @@ Simplified version of `https://github.com/wenerme/coredns-pdsql/`
 plugin.cfg
 ```
 ...
-sql:git.dev.a1fred.com/protocloud/zibort-coredns/pdsql
+sql:github.com/a1fred/coredns-sql
 sql_postgres:github.com/jinzhu/gorm/dialects/postgres
 ...
 ```
